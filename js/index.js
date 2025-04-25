@@ -19,7 +19,10 @@ document.getElementById('balanceParseFloar').innerText=newBalance;
 })
 // document.getElementById('balanceParseFloar').innerText=newBalance;
 
+
 // second card
+
+
 document.getElementById('btn-donate-2').addEventListener('click', function(event){
     event.preventDefault();
     console.log('btn-donate-2')
@@ -40,6 +43,31 @@ document.getElementById('btn-donate-2').addEventListener('click', function(event
     })
     // document.getElementById('balanceParseFloar').innerText=newBalance;
     
+
+    // thirt card
+
+    document.getElementById('btn-donate-3').addEventListener('click', function(event){
+        event.preventDefault();
+        console.log('btn-donate-3')
+        
+        const inputNumber3 = document.getElementById('input-number-3').value;
+        const numberParseFloar = parseFloat(inputNumber3)
+        console.log(numberParseFloar);
+        const balanceInput3 = document.getElementById('balance-3').innerText;
+        const balanceParseFloar = parseFloat(balanceInput3);
+        console.log(balanceParseFloar)
+        
+        const sumTotal = balanceParseFloar + numberParseFloar;
+        console.log(sumTotal);
+        
+        document.getElementById('balance-3').innerText=sumTotal;
+        document.getElementById('balanceParseFloar').innerText=newBalance;
+       
+
+        })
+        
+        // document.getElementById('balanceParseFloar').innerText=newBalance;
+        
     
 
 
