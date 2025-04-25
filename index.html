@@ -26,7 +26,7 @@
             </div>
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1 text-2xl">
-                <li><a>Donate Bangladesh</a></li>
+                <li><a><i class="fa-solid fa-hand-holding-dollar"></i> Donate Bangladesh</a></li>
               </ul>
             </div>
             <div class="navbar-end">
@@ -38,34 +38,34 @@
     </header>
     <main>
        <div class="container mx-auto">
-        <div class="flex justify-center gap-10 py-10 ">
+        <div class="flex justify-center gap-20 py-10 ">
           <button class="text-2xl p-2 rounded-md bg-blue-300">Donation</button>
           <button class="text-2xl p-2 rounded-md bg-blue-300">History</button>
         </div>
         <div>
-          <div class="grid grid-cols-2 p-8 rounded-md mb-10">
+          <div class="grid grid-cols-2 p-8 rounded-md gap-10">
             <img class="w-180 h-120" src="assets/noakhali.png" alt="">
             <div>
-              <h4 class="bg-gray-100 inline-block p-2 rounded-sm text-2xl mb-8"><i class="fa-solid fa-dollar-sign"></i> 0 BDT</h4>
+              <h4 class="bg-gray-100 inline-block p-2 rounded-sm text-2xl mb-8"><i class="fa-solid fa-dollar-sign"></i><span id="balance-1"> 00</span> BDT</h4>
               <h2 class="mb-8 text-4xl">Donate for Flood at Noakhali, Bangladesh</h2>
               <p class="mb-8 text-2xl"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-              <input class="mb-10 w-full p-2" type="text"placeholder="Write Donation Amount"><br>
-              <button class="bg-green-200  rounded-lg p-4 w-full text-2xl font-bold">Donate Now</button>
+              <input id="input-number" class="mb-10 w-full p-2" type="text"placeholder="Write Donation Amount"><br>
+              <button id="btn-donate-1" class="bg-green-200  rounded-lg p-4 w-full text-2xl font-bold">Donate Now</button>
             </div>
           </div>
 
-          <div class="grid grid-cols-2 p-8 rounded-md mb-10">
+          <div class="grid grid-cols-2 p-8 rounded-md gap-10">
             <img class="w-180 h-120" src="assets/feni.png" alt="">
             <div>
-              <h4 class="bg-gray-100 inline-block p-2 rounded-sm text-2xl mb-8"><i class="fa-solid fa-dollar-sign"></i> 600 BDT</h4>
+              <h4 class="bg-gray-100 inline-block p-2 rounded-sm text-2xl mb-8"><i class="fa-solid fa-dollar-sign"></i><span id="balance-2"> 600</span>BDT</h4>
               <h2 class="mb-8 text-4xl">Donate for Flood Relief in Feni,Bangladesh</h2>
               <p class="mb-8 text-2xl"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster.</p>
-              <input class="mb-10 w-full p-2" type="text"placeholder="Write Donation Amount"><br>
-              <button class="bg-green-200  rounded-lg p-4 w-full text-2xl font-bold">Donate Now</button>
+              <input id="input-number-2" class="mb-10 w-full p-2" type="text"placeholder="Write Donation Amount"><br>
+              <button id="btn-donate-2" class="bg-green-200  rounded-lg p-4 w-full text-2xl font-bold">Donate Now</button>
             </div>
           </div>
 
-          <div class="grid grid-cols-2 p-8 rounded-md mb-10">
+          <div class="grid grid-cols-2 p-8 rounded-md gap-10">
             <img class="w-180 h-120" src="assets/quota-protest.png" alt="">
             <div>
               <h4 class="bg-gray-100 inline-block p-2 rounded-sm text-2xl mb-8"><i class="fa-solid fa-dollar-sign"></i> 2400 BDT</h4>
@@ -83,6 +83,6 @@
 
     </footer>
    
-    
+    <script src="js/index.js"></script>
 </body>
 </html>
