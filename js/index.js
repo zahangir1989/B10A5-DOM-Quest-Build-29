@@ -45,18 +45,25 @@ document
     const mainBalance = document.getElementById("main-balance").innerText;
     const mainBalance2Float = parseFloat(mainBalance);
     console.log(mainBalance2Float);
+    if(balanceParseFloar === 600){
+        const balanceMain = mainBalance2Float + sumTotal;
+        document.getElementById('main-balance').innerText = balanceMain;
+        const balancesub = balanceParseFloar + numberParseFloar;
+        document.getElementById('balance-2').innerText = balancesub;
 
-    const reduceBalance =
-      mainBalance2Float + numberParseFloar + balanceParseFloar;
-    console.log(reduceBalance);
+    }
+    if(balanceParseFloar > 600){
+        const balanceMain = mainBalance2Float + numberParseFloar;
+        document.getElementById('main-balance').innerText = balanceMain;
+        const subTotal2 = numberParseFloar + balanceParseFloar;
+        document.getElementById('balance-2').innerText = subTotal2;
 
-    document.getElementById("balance-2").innerText = sumTotal;
-    document.getElementById("main-balance").innerText = reduceBalance;
+    }
+
     document.getElementById("input-number-2").value = " ";
   });
 
 // thirt card
-// (isNaN(balanceParseFloat) ? 2400 : 0);
 
 document
   .getElementById("btn-donate-3")

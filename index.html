@@ -36,13 +36,14 @@
           </div>
 
     </header>
-    <main>
+   
+    <main id="">
        <div class="container mx-auto">
         <div class="flex justify-center gap-20 py-10 ">
-          <button class="text-2xl p-2 rounded-md bg-blue-300">Donation</button>
-          <button class="text-2xl p-2 rounded-md bg-blue-300">History</button>
+          <button id="donte-btn" class="text-2xl p-2 rounded-md bg-blue-300">Donation</button>
+          <button id="History-btn"  class="text-2xl p-2 rounded-md bg-blue-300">History</button>
         </div>
-        <div>
+        <div id="hiddenDev">
 
           <div class="grid grid-cols-2 p-8 rounded-md gap-10">
             <img class="w-180 h-130" src="assets/noakhali.png" alt="">
@@ -79,11 +80,16 @@
           
         </div>
        </div>
+       <div id="visible" class="container mx-auto hidden">
+         <p class="border mb-3 p-1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorem ad cupiditate laudantium molestias possimus alias, soluta dolores similique unde quidem animi dicta at nobis excepturi eligendi eos omnis id.</p>
+         <p class="border mb-3 p-1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorem ad cupiditate laudantium molestias possimus alias, soluta dolores similique unde quidem animi dicta at nobis excepturi eligendi eos omnis id.</p>
+       </div>
     </main>
     <footer>
 
     </footer>
    
     <script src="js/index.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
