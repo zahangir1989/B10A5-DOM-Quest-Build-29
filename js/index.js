@@ -59,34 +59,34 @@ document.getElementById('btn-donate-2').addEventListener('click', function(event
     // (isNaN(balanceParseFloat) ? 2400 : 0);
 
 
-    // document.getElementById('btn-donate-3').addEventListener('click', function(event){
-    //     event.preventDefault();
-    //     console.log('btn-donate-3')
+    document.getElementById('btn-donate-3').addEventListener('click', function(event){
+        event.preventDefault();
+        console.log('btn-donate-3')
         
-    //     const inputNumber3 = document.getElementById('input-number-3').value;
-    //     const numberParseFloar = parseFloat(inputNumber3)
-    //     console.log(numberParseFloar);
+        const inputNumber3 = document.getElementById('input-number-3').value;
+        const numberParseFloar = parseFloat(inputNumber3)
+        console.log(numberParseFloar);
     
-    //     const balanceInput3 = document.getElementById('balance-3').innerText;
-    //     const balanceParseFloar = parseFloat(balanceInput3);
-    //     if(balanceParseFloar === '2400'){
-    //         return balanceParseFloar;
-    //     }
-    //     const sumTotal = balanceParseFloar + numberParseFloar;
-    //     console.log(sumTotal);
+        const balanceInput3 = document.getElementById('balance-3').innerText;
+        const balanceParseFloar = parseFloat(balanceInput3);
+        if(balanceParseFloar === '2400'){
+            return balanceParseFloar;
+        }
+        const sumTotal = balanceParseFloar + numberParseFloar;
+        console.log(sumTotal);
     
-    //     const mainBalance = document.getElementById('main-balance').innerText;
-    //     const mainBalance3Float = parseFloat(mainBalance)
-    //     console.log(mainBalance3Float);
+        const mainBalance = document.getElementById('main-balance').innerText;
+        const mainBalance3Float = parseFloat(mainBalance)
+        console.log(mainBalance3Float);
         
-    //     const reduceBalance =  mainBalance3Float + numberParseFloar + (isNaN(balanceParseFloar) ? 2400 : 0);
-    //     console.log(reduceBalance);
+        const reduceBalance =  mainBalance3Float + numberParseFloar + (isNaN(balanceParseFloar) ? 2400 : 0);
+        console.log(reduceBalance);
         
-    //     document.getElementById('balance-3').innerText=sumTotal;
-    //     document.getElementById('main-balance').innerText=reduceBalance;
-    //     document.getElementById('input-number-3').value=' ';
+        document.getElementById('balance-3').innerText=sumTotal;
+        document.getElementById('main-balance').innerText=reduceBalance;
+        document.getElementById('input-number-3').value=' ';
         
-    //     })
+        })
        
    
     
