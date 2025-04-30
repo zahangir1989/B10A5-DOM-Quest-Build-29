@@ -23,6 +23,7 @@ document
     document.getElementById("input-number").value = " ";
   });
 
+
 // second card
 
 document
@@ -45,23 +46,27 @@ document
     const mainBalance = document.getElementById("main-balance").innerText;
     const mainBalance2Float = parseFloat(mainBalance);
     console.log(mainBalance2Float);
-    if(balanceParseFloar === 600){
-        const balanceMain = mainBalance2Float + sumTotal;
-        document.getElementById('main-balance').innerText = balanceMain;
-        const balancesub = balanceParseFloar + numberParseFloar;
-        document.getElementById('balance-2').innerText = balancesub;
 
-    }
-    if(balanceParseFloar > 600){
-        const balanceMain = mainBalance2Float + numberParseFloar;
-        document.getElementById('main-balance').innerText = balanceMain;
-        const subTotal2 = numberParseFloar + balanceParseFloar;
-        document.getElementById('balance-2').innerText = subTotal2;
+    if (balanceParseFloar === 600) {
+      const reduceBalance = mainBalance2Float + sumTotal;
+      document.getElementById("main-balance").innerText = reduceBalance;
 
+      const subBlance = balanceParseFloar + numberParseFloar;
+      document.getElementById("balance-2").innerText = subBlance;
+      
     }
 
+    if (balanceParseFloar > 600) {
+      const reduceBalance = mainBalance2Float + numberParseFloar;
+      document.getElementById("main-balance").innerText = reduceBalance;
+
+      const sumTotal1 = numberParseFloar + balanceParseFloar;
+      document.getElementById("balance-2").innerText = sumTotal1;
+    }
     document.getElementById("input-number-2").value = " ";
   });
+
+  
 
 // thirt card
 
