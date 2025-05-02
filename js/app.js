@@ -67,7 +67,7 @@ visibleContainer.appendChild(p);
 
 document.getElementById('btn-donate-3').addEventListener('click', function(){
  
-    const fullDivInner = document.getElementById('fullDiv1');
+    const fullDivInner = document.getElementById('fullDiv3');
     const displayDiv = fullDivInner.innerText;
     console.log(displayDiv);
 
