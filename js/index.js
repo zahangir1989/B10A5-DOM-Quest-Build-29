@@ -21,8 +21,11 @@ document
     document.getElementById("balance-1").innerText = sumTotal;
     document.getElementById("main-balance").innerText = reduceBalance;
     document.getElementById("input-number").value = " ";
-  });
 
+    document.getElementById("header-dilog").innerText= document.getElementById("headline").innerText;
+    document.getElementById("paragharp-dilog").innerText = document.getElementById("description").innerText;
+   document.getElementById("number-center").innerText = numberParseFloat
+  });
 
 // second card
 
@@ -53,7 +56,6 @@ document
 
       const subBlance = balanceParseFloar + numberParseFloar;
       document.getElementById("balance-2").innerText = subBlance;
-      
     }
 
     if (balanceParseFloar > 600) {
@@ -65,8 +67,6 @@ document
     }
     document.getElementById("input-number-2").value = " ";
   });
-
-  
 
 // thirt card
 
